@@ -31,7 +31,7 @@
 Пример запроса на локальной машине к БД Cloud SQL:
 
 `http://localhost:8080/?id=3&fullName=Дроздов Игорь Сергеевич&email=drozd@mail.ru
-&cliPhone=9305007080&address=г. Липецк, ул. Красноармейская, д. 16, кв. 35&pasSeries=1123&pasNumber=343434
+&cliPhone=9305007080&address=г. Липецк, ул. Красноармейская, д. 15, кв. 35&pasSeries=1123&pasNumber=343434
 &pasIssued=отделом УФМС России по Красноярскому краю в г. Красноярске&pasDateIssued=11.10.2018&pasDevisCode=135666`
 
 Данные конфигурации указаны в [app.yaml](app.yaml):
@@ -107,3 +107,5 @@ open http://localhost:8080/docs
 ```
 
 This project leverages the mega-awesome [swagger-tools](https://github.com/apigee-127/swagger-tools) middleware which does most all the work.
+
+LSTU 2018 MAS-18
