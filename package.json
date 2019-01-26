@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prestart": "npm install",
-    "start": "node index.js",
-    "start-proxy": "! pgrep cloud_sql_proxy > /dev/null && cloud_sql_proxy -instances=$INSTANCE_CONNECTION_NAME=tcp:$SQL_PORT &"
+    "start": "node index.js"
   },
   "keywords": [
     "swagger"
@@ -24,6 +23,7 @@
     "js-yaml": "^3.3.0",
     "knex": "^0.15.2",
     "pg": "7.4.1",
+    "phantomjs-prebuilt": "^2.1.16",
     "process": "^0.11.10",
     "prompt": "1.0.0",
     "swagger-tools": "^0.10.4",
