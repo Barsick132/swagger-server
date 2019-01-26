@@ -27,7 +27,7 @@
     "prompt": "1.0.0",
     "swagger-tools": "^0.10.4",
     "uniqid": "^5.0.3",
-    "webshot": "^0.18.0",
+    "webshot2": "^2.0.1",
     "yaml-config": "^0.3.0"
   }
 }

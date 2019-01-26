@@ -2,7 +2,7 @@
 
 const MethodDB = require('../db_method/MethodClient');
 const knex = require('../index').knex;
-const webshot = require('webshot');
+const webshot = require('webshot2');
 const uniqid = require('uniqid');
 
 /**
