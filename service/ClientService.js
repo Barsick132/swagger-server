@@ -134,8 +134,7 @@ exports.getScreen = function (uRL, host) {
             height: 1080
         },
         phantomConfig:{
-            'ssl-protocol': 'any',
-            'ignore-ssl-errors': 'true'
+            'ssl-protocol': 'any'
         }
     };
 
