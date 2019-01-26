@@ -36,11 +36,10 @@ function connect() {
         user: process.env.SQL_USER || settings.SQL_USER,
         password: process.env.SQL_PASSWORD || settings.SQL_PASSWORD,
         database: process.env.SQL_DATABASE || settings.SQL_DATABASE,
+        host: process.env.SQL_HOST || settings.SQL_HOST,
+        port: process.env.SQL_PORT || settings.PORT,
+        uri: process.env.SQL_URI || settings.SQL_URI
     };
-
-    if (process.env.INSTANCE_CONNECTION_NAME && process.env.NODE_ENV === 'production') {
-        config.host = `/cloudsql/${process.env.INSTANCE_CONNECTION_NAME}`;
-    }
 
     // Данные подключения к БД
     return Knex({

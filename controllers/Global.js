@@ -21,25 +21,6 @@ module.exports.publicGetImg = function publicGetImg(req, res, next) {
             });
             require('fs').createReadStream(response).pipe(res);
             console.log(TAG + ' -> result: good');
-            /*
-            require('fs').readFile(response, 'binary', (err, img) => {
-                if (err) {
-                    console.error(TAG + ' -> result 1: ' + err);
-                    utils.writeJson(res, result[Object.keys(result)[0]]);
-                } else {
-                    try {
-                        const mimeType = response.match(/.(jpeg|jpg|png|gif)$/)[1];
-                        console.log(TAG + ' -> result: good');
-                        res.writeHead(200, {'Content-Type': 'image/' + mimeType});
-                        res.end(img, 'binary');
-                    }
-                    catch (err) {
-                        console.error(TAG + ' -> result 2: ' + err);
-                        utils.writeJson(res, result[Object.keys(result)[0]]);
-                    }
-                }
-            });
-            */
         })
         .catch((err) => {
             console.error(TAG + ' -> result: ' + err);

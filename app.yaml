@@ -1,11 +1,14 @@
 runtime: nodejs
-env: flex
+#env: flex
 
 env_variables:
-  SQL_USER: postgres
-  SQL_PASSWORD: P@ssword
-  SQL_DATABASE: webdb
-  INSTANCE_CONNECTION_NAME: voice-gen-220900:europe-west1:pgsql
+  SQL_USER: riipqrnnivpqxj
+  SQL_PASSWORD: 34157f293b60ff821d140ad2ff6cb71583566dd2bf0c716dfba6f97f4483b5cc
+  SQL_DATABASE: ddc7g0s7hspldf
+  SQL_HOST: ec2-54-75-230-41.eu-west-1.compute.amazonaws.com
+  SQL_PORT: 5432
+  SQL_URI: postgres://riipqrnnivpqxj:34157f293b60ff821d140ad2ff6cb71583566dd2bf0c716dfba6f97f4483b5cc@ec2-54-75-230-41.eu-west-1.compute.amazonaws.com:5432/ddc7g0s7hspldf
+  #INSTANCE_CONNECTION_NAME: voice-gen-220900:europe-west1:pgsql
 
-beta_settings:
-  cloud_sql_instances: voice-gen-220900:europe-west1:pgsql
+#beta_settings:
+  #cloud_sql_instances: voice-gen-220900:europe-west1:pgsql
